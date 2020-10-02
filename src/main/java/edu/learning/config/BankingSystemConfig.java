@@ -8,8 +8,8 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 
-import edu.learning.daos.TrialDao;
-import edu.learning.daos.TrialDaoImpl;
+import edu.learning.daos.BankingSystemDao;
+import edu.learning.daos.BankingSystemImpl;
 
 @Configuration
 public class BankingSystemConfig {
@@ -25,8 +25,8 @@ public class BankingSystemConfig {
 	}
 
 	@Bean(name = "trialdao", autowire = Autowire.NO)
-	public TrialDao trialDao(DataSource ds) {
-		TrialDaoImpl td = new TrialDaoImpl();
+	public BankingSystemDao trialDao(DataSource ds) {
+		BankingSystemImpl td = new BankingSystemImpl();
 		td.setDataSource(ds);
 		return td;
 	}

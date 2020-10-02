@@ -1,6 +1,6 @@
 package edu.learning.model;
 
-public class Trial {
+public class BankingSystem {
 
 	private int 	accNo;
 	private String 	firstName;
@@ -10,7 +10,7 @@ public class Trial {
 	private double	transAmt;
 	private String 	accStatus;
 	
-	public Trial() {
+	public BankingSystem() {
 		super();
 		// TODO Auto-generated constructor stub
 	}

@@ -7,18 +7,18 @@ import javax.sql.DataSource;
 
 import org.springframework.stereotype.Repository;
 
-import edu.learning.model.Trial;
-public class TrialDaoImpl implements TrialDao {
+import edu.learning.model.BankingSystem;
+public class BankingSystemImpl implements BankingSystemDao {
 	private DataSource dataSource;
 
-	public TrialDaoImpl() {
+	public BankingSystemImpl() {
 	}
 
 	public void setDataSource(DataSource dataSource) {
 		this.dataSource = dataSource;
 	}
 
-	public void openAcc(Trial trail) {
+	public void openAcc(BankingSystem trail) {
 		// TODO Auto-generated method stub
 		// INSERT
 		Connection con = null;
@@ -56,7 +56,7 @@ public class TrialDaoImpl implements TrialDao {
 		
 	}
 
-	public void updateAcc(Trial trial) {
+	public void updateAcc(BankingSystem trial) {
 		// TODO Auto-generated method stub
 		// UPDATE
 	}
